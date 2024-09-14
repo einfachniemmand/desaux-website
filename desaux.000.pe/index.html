@@ -1,0 +1,1058 @@
+<html lang="de" oncontextmenu="return false" id="html_document">
+    <head>
+        <title>
+            Desaux's Links by einfachniemmand
+        </title>
+        <link rel="stylesheet" href="https://egkoppel.github.io/product-sans/google-fonts.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <meta http-equiv='content-language' content='de-de'>
+        <meta name="msvalidate.01" content="98BED2D01FBA9A7893B42225C86CBE5A" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="https://cdn.discordapp.com/icons/901458579482099762/5ae793c98864e5dffb8942ed8d04abd5.webp?size=160">
+        <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+        <meta name='description' content='Eine Übersicht mit Links über den YouTuber und Streamer Desaux.'>
+        <script id="user_script">
+            var rotate_navimg = 0;
+            var rotating = 0;
+            var speed = 10;
+            var turns = 0;
+            function rotate_logo (ele) {
+                turns++;
+                rotating = 200;
+                speed = speed + 70;
+                document.getElementById('easter_egg_counter').style.top = '100px'
+                rotate_navimg = speed + rotate_navimg;
+                ele.style.transform = 'rotate('+rotate_navimg+'deg)';
+                ele.style.cursor = 'none'
+                ele.style.backgroundSize = '95px'
+                ele.style.height = '100px'
+                document.getElementById('easter_egg_counter').innerHTML = '<i class="fa-solid fa-rotate-right" style="margin-right:5px;font-size:12px;"></i>'+ turns;
+                document.getElementById('nav_outer').style.height = '100px'
+            }
+            setInterval(function(){
+                if(rotating == 0){
+                    document.getElementById('nav_outer').style.height = ''
+                    document.getElementById('nav_img').style.height = ''
+                    turns = 0;
+                    speed = 10;
+                    document.getElementById('easter_egg_counter').style.top = '0';
+                    document.getElementById('nav_img').style.cursor = 'unset'
+                    document.getElementById('nav_img').style.backgroundSize = ''
+                } else {
+                    rotating = rotating - 1;
+                    if(speed > 2){
+                        speed = speed - 2;
+                    }
+            }
+            },10)
+            function cookieinfo () {
+                alert(unescape('Hier findest du Informationen %FCber die Nutzung und Weitergabe deiner Daten auf desaux.000.pe und Subdomains.%0A%0A   Es werden nur Daten gespeichert und abgerufen%2C%0A   um die Webseite und Google vor DDoS Angriffen zu sch%FCtzen.%0A   Diese Daten enthalten keinerlei personalisierte Informationen.%0A%0A%0AN%E4here Informationen%3A%0A-------------------------%0A   Beim Interagieren mit der Webseite kann eine%0A   Reihenfolge aus Zahlen gespeichert werden%2C die sp%E4ter%0A   wieder abgerufen wird%2C bei einer neuen Interaktion.'))
+            }
+            var cookie_allowance = false;
+            function cookie_ok () {
+                localStorage.setItem('desauxcookie_ok','1')
+                document.getElementById('cookie_allowance_outer').style.bottom = '-70%';
+                setTimeout(function(){
+                    location.reload();
+                },900)
+            }
+            var loaded = 0;
+            function isMobile(){
+                if(window.innerWidth < 351){
+                    return true;
+                } else {
+	return navigator.userAgent.match(/(iPhone|iPod|iPad|blackberry|android|Kindle|htc|lg|midp|mmp|mobile|nokia|opera mini|palm|pocket|psp|sgh|smartphone|symbian|treo mini|Playstation Portable|SonyEricsson|Samsung|MobileExplorer|PalmSource|Benq|Windows Phone|Windows Mobile|IEMobile|Windows CE|Nintendo Wii)/i);
+                }
+}
+            setInterval(function(){
+                if(isMobile()){
+                } else {
+                    document.getElementById('news_box').style.backgroundSize = (70+(window.innerWidth/3)*2)+'px';
+                    if(window.innerWidth < 989){
+                        document.getElementById("cross").style.display = 'none'
+                    } else {
+                        document.getElementById("cross").style.display = 'flex'
+                    }
+                    if(window.innerWidth < 880){
+                        document.getElementById("downloads_nav").style.display = 'none'
+                    } else {
+                        document.getElementById("downloads_nav").style.display = 'flex'
+                    }
+                    if(window.innerWidth < 1200){
+                        document.getElementById("sm1").style.display = 'none'
+                        document.getElementById("sm2").style.display = 'none'
+                        document.getElementById("sm3").style.display = 'none'
+                        document.getElementById("imgs1").style.float = 'right'
+                        document.getElementById("imgs2").style.width = '100%'
+                        document.getElementById('fillin_b').innerHTML = ".link_box_s {background:transparent;}#outer_insta{width:20%}.link_box_s:hover{background:transparent;}"
+                    } else {
+                        document.getElementById("sm1").style.display = 'block'
+                        document.getElementById("sm2").style.display = 'block'
+                        document.getElementById("sm3").style.display = 'block'
+                        document.getElementById("imgs1").style.float = ''
+                        document.getElementById("imgs2").style.width = '125px'
+                        document.getElementById('fillin_b').innerHTML = ""
+                    }
+                }
+            },10)
+            function changecursor () {
+                document.getElementById('body').style.cursor = 'crosshair';
+                document.getElementById('fillin').innerHTML = 'div {cursor:crosshair;}.nav_text,.nav_text_l,.nav_text_l1,.twitch_link,.yt_link_widget,.twitch_link_widget,#wiki_box,#stv_download,.link_box {cursor:crosshair} #create{cursor:crosshair} .mod_shortcut{cursor:crosshair}'
+            }
+            function popup (url) {
+                window.open('https://'+url,'Weiterleitung...')
+            }
+            function redirect (num) {
+                localStorage.setItem('openInt',num);
+                window.open('redirect','Weiterleitung...')
+            }
+            function smoothScroll(target) {
+                var element = document.getElementById(target);
+                if (element) {
+                    window.scrollTo({
+                    top: element.offsetTop-75,
+                    behavior: 'smooth'
+                });
+            }
+            }
+            const API_KEY = 'AIzaSyD3YQFVskiJsceYiB5x6KHpjwSVQ5CPoms'; // API-Key
+            const CHANNEL_ID = 'UCsM82TfSVs6YDQWNhDz5gYA'; // Desaux ChannelID
+            var apicall;
+            async function getLatestVideoId() {
+                loaded = 1;
+                if(localStorage.getItem('counter_id') < 4){} else {
+                    localStorage.setItem('counter_id',0)
+                }
+                if(localStorage.getItem('counter_id') > 0){
+                    apicall = localStorage.getItem('last_id');
+                    console.log('Result from fetching:', apicall);
+                    document.getElementById('last_vid').src = 'https://www.youtube-nocookie.com/embed/'+apicall+'?si=';
+                    localStorage.setItem('counter_id',localStorage.getItem('counter_id')-1)
+            
+                } else {
+                    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&maxResults=1&order=date&type=video&key=${API_KEY}`;
+            let latestVideoId;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+
+                if (data.items && data.items.length > 0) {
+                latestVideoId = data.items[0].id.videoId;
+                console.log('VideoID', latestVideoId);
+                apicall = latestVideoId;
+                localStorage.setItem('last_id',apicall);
+                localStorage.setItem('counter_id',10);
+                document.getElementById('last_vid').src = 'https://www.youtube-nocookie.com/embed/'+apicall+'?si=';
+                return latestVideoId;
+                } else {
+                console.log('ChannelID error.');
+                return null;
+                }
+            } catch (error) {
+                console.error('Error while fetching VideoID:', error);
+            }
+                }
+            }
+            if(location.pathname == "/"){
+                setTimeout(function(){
+                    if(cookie_allowance == true){
+                    var setvid = setInterval(function(){
+                if(scrollY > 500){
+                    getLatestVideoId();
+                    clearInterval(setvid);
+                }
+            },1500)
+                    }
+                },1000)
+            } else {
+                location.href = 'https://desaux.000.pe/'
+            }
+            onload=function(){
+                if(isMobile()){
+                    document.getElementById('fillin').innerHTML = '.nav_outer_text_l,.nav_outer_text_l1,#cross,#nav_news{display:none}#news_outer_text{width:100%;background:linear-gradient(to top, rgb(24, 36, 51)85%,transparent);padding-top:75px;}#news_box {height:unset;padding-bottom:50px;margin-left:15px;margin-right:10px;}#news_outer{height:950px;margin-bottom:50px;}#news_linear {background:transparent}.link_link{display:none}.link_title{font-size:30px;}.link_outer_text{padding:15px;padding-left:0;}.link_box{margin-left:5px;margin-right:5px;}.link_box_s{background:transparent;margin:0}#wiki_box {margin-left:5px;margin-right:5px;height:unset;padding:30px;padding-bottom:40px;width:100%;}#outer_wiki{height:650px;margin-bottom:50px;}#vid_box{width:100%;margin:5px;height:500px;padding:0;}#outer_vid{display:block;max-width:100%;height:550px;}#last_vid{width:100%;margin:20px;}#stv_box {margin:5px}#title_stv{font-size:30px;}#stv_box{margin:5px;height:unset;padding-bottom:20px;width:100%;}#stv_outer {height:650px}#vid_title {font-size:28px;}#nav_padding{height:50px}.cookie_button:first-child{margin-left:0;}.cookie_button{float:unset;margin-top:10px;width:90%;margin-bottom:1px;}';
+                    document.getElementById('Discord').innerHTML = 'Discord'
+                    document.getElementById('Twitch').innerHTML = 'Twitch'
+                    document.getElementById('YouTube').innerHTML = 'YouTube'
+                    document.getElementById('Whatsapp').innerHTML = 'WhatsApp'
+                    document.getElementById('Insta').innerHTML = ''
+                    document.getElementById('X').innerHTML = ''
+                    document.getElementById('TikTok').innerHTML = ''
+                    document.getElementById('wiki_box').style.width = '100%'
+                    document.getElementById('wiki_box').style.marginLeft = '5px'
+                    document.getElementById('wiki_box').style.marginRight = '5px'
+                    document.getElementById('m_hide').style.display = 'none'
+                    document.getElementById('m_p').style.padding = '35px'
+                    document.getElementById('m_p').style.paddingBottom = '0'
+                    document.getElementById('img_stv').style.width = '50px'
+                    document.getElementById('img_stv').style.marginTop = '30px'
+                    document.getElementById('img_stv').style.marginLeft = '30px'
+                    document.getElementById('img_stv').style.marginRight = '20px'
+                    document.getElementById('mod_outer').style.display = 'none'
+                    document.getElementById('news_box').style.backgroundSize = '830px';
+                    document.getElementById('end_text_news').style.display = 'none';
+                    document.getElementById('widget_outer_news').style.background = 'transparent';
+                    document.getElementById('widget_outer_news').style.position = 'static';
+                    document.getElementById('padding_50_outer').style.margin = '15px';
+
+                } else {
+                    
+            window.addEventListener('scroll', function() {
+    // Gesamthöhe des Dokuments
+    const documentHeight = document.documentElement.scrollHeight;
+    
+    // Höhe des sichtbaren Bereichs des Fensters
+    const windowHeight = window.innerHeight;
+    
+    // Aktuelle Scroll-Position
+    const scrollPosition = window.scrollY;
+
+    // Überprüfen, ob der Benutzer das Ende der Seite erreicht hat
+    if (scrollPosition + windowHeight >= documentHeight) {
+        setTimeout(function(){
+            document.getElementById('outer_imp').style.bottom = '0px'
+        document.getElementById('arrow_up').style.bottom = '50px'
+        },50)
+    } else {
+        document.getElementById('outer_imp').style.bottom = '-30px'
+        document.getElementById('arrow_up').style.bottom = '-100px'
+    }
+});
+                }
+            }
+        </script>
+    </head>
+    <body style="margin:0;padding: 0;background: rgb(24, 36, 51);background: rgb(21, 31, 44);" id="body">
+        <h1 style="position:fixed;opacity:0;top:0;left:0;">Der Streamer Desaux</h1>
+        <div id="nav_outer">
+            <div id="nav_img" onclick="if(isMobile()){smoothScroll('nav_padding')};rotate_logo(this);"></div>
+            <div class="nav_outer_text" id="nav_news"><span class="nav_text" onclick="smoothScroll('nav_padding')">News</span></div>
+            <div class="nav_outer_text"><span class="nav_text" onclick="smoothScroll('link')">Links</span></div>
+            <div class="nav_outer_text_l"><span class="nav_text_l" onclick="smoothScroll('outer_wiki')">Allgemeine Infos</span></div>
+            <div class="nav_outer_text_l1"><span class="nav_text_l1" onclick="smoothScroll('outer_vid');if(loaded==0){getLatestVideoId();clearInterval(setvid);}">Aktuelles Video</span></div>
+            <div class="nav_outer_text" style="margin-left:30px;" id="downloads_nav"><span class="nav_text" onclick="smoothScroll('stv_outer')">Downloads</span></div>
+            <div class="nav_outer_text" style="margin-left:30px;float:right;" id="cross"><span style="font-weight:200;font-size:40px;" class="nav_text" onclick="changecursor();this.style.opacity = '0'">+</span></div>
+        </div>
+        <div id="easter_egg_counter"><i class="fa-solid fa-rotate-right" style="margin-right:5px;font-size:12px;"></i>0</div>
+        <div id="nav_padding" style="margin-bottom: 15px;"></div>
+        <div id="news_outer">
+            <div id="news_box">
+                <div id="news_linear"></div>
+                <div id="news_outer_text">
+                    <div style="padding-left: 15px;">
+                        <span id="news_title">Minecraft&thinsp;<span id="create" style="transition:500ms;" onclick="window.open('create.zip')">Create<img src="forge.png" id="create_img"  alt="icon"><span id="sp_create">&thinsp;</span></span>Modpack</span>
+                        <span id="news_h2"><br>mit </span><span class="twitch_link" onclick="popup('twitch.tv/zesalx')"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968819.png" draggable="false" alt="icon" class="twitch_15">&thinsp;Zesalx</span></span>
+                        <div style="height: 15px;"></div>
+                        <span id="news_text">Maschinen, Zahnräder und Rentner... Das Create Modpack von Desaux ist vielseitig. Hier lässt Desaux seiner Kreativität freien Lauf.</span>
+                        <div id="end_text_news"></div>
+                        <div style="height: 30px;"></div>
+                        <div id="widget_outer_news">
+                            <div class="twitch_link_widget" onclick="redirect(1)">DesauxTV</div>
+                            <div class="yt_link_widget" onclick="redirect(2)">Desaux</div>
+                        </div>
+                        <div id="mod_outer">
+                            <div class="mod_shortcut" id="rinth_shortcut"  style="background-image:url(https://docs.modrinth.com/img/logo.svg);" onclick="window.open('create.mrpack')"></div>
+                            <div class="mod_shortcut" style="background-image:url(forge.png);" onclick="window.open('create.zip')"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div style="opacity:0;width:0;height:0;" id="links"></div>
+        </div>
+        <div id="link">
+        <div class="outer_link" onclick="redirect(3)">
+            <div class='link_box'>
+                <div class="outer_link_img">
+                    <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" class="link_img" alt="icon" draggable="false">
+                </div>
+                <div class="link_outer_text">
+                    <span class="link_title" id="Discord">Tritt dem offiziellen Discord Server bei!</span>
+                    <span class="link_link"><br>https://discord.gg/2cQV9wm8Ys</span>
+                </div>
+            </div>
+        </div>
+        <div class="outer_link" onclick="redirect(2)">
+            <div class='link_box'>
+                <div class="outer_link_img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" class="link_img" alt="icon" draggable="false">
+                </div>
+                <div class="link_outer_text">
+                    <span class="link_title" id="YouTube">Guck dir Desaux auf YouTube an!</span>
+                    <span class="link_link"><br>https://youtube.com/@desaux</span>
+                </div>
+            </div>
+        </div>
+        <div class="outer_link" onclick="redirect(1)">
+            <div class='link_box'>
+                <div class="outer_link_img">
+                    <img draggable="false" src="https://cdn-icons-png.flaticon.com/512/5968/5968819.png" class="link_img"  alt="icon">
+                </div>
+                <div class="link_outer_text">
+                    <span class="link_title" id="Twitch">Guck dir DesauxTV live auf Twitch an!</span>
+                    <span class="link_link"><br>https://twitch.tv/desauxtv</span>
+                </div>
+            </div>
+        </div>
+        <div class="outer_link" onclick="redirect(4)">
+            <div class='link_box'>
+                <div class="outer_link_img">
+                    <img draggable="false" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png"  alt="icon" class="link_img">
+                </div>
+                <div class="link_outer_text">
+                    <span class="link_title" id="Whatsapp">Bekomme immer alles über WhatsApp mit!</span>
+                    <span class="link_link"><br>https://whatsapp.com/channel/0029VaAUgs55q08ftMO8OW3Q</span>
+                </div>
+            </div>
+        </div>
+        <div class="outer_link">
+            <div class='link_box_s'  onclick="redirect(5)">
+                <div class="outer_link_img"  id="imgs1">
+                    <img draggable="false" src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" class="link_img" alt="icon">
+                </div>
+                <div class="link_outer_text" style="padding-left:0;"  id="sm1">
+                    <span class="link_title" id="TikTok">TikTok</span>
+                    <span class="link_link"><br>tiktok.com/@desaux</span>
+                </div>
+            </div>
+            <div class='link_box_s' onclick="redirect(6)" id="outer_insta">
+                <div class="outer_link_img" id="imgs2">
+                    <img draggable="false" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" class="link_img" alt="icon">
+                </div>
+                <div class="link_outer_text" style="padding-left:0;"  id="sm2">
+                    <span class="link_title" id="Insta">Instagram</span>
+                    <span class="link_link" id="sm2"><br>instagram.com/DesauxYT</span>
+                </div>
+            </div>
+            <div class='link_box_s' onclick="redirect(7)">
+                <div class="outer_link_img"  id="imgs3">
+                    <img draggable="false" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-black-icon.png" class="link_img" alt="icon">
+                </div>
+                <div class="link_outer_text" style="padding-left:0;"  id="sm3">
+                    <span class="link_title" id="X">X</span>
+                    <span class="link_link" id="sm3"><br>x.com/DesauxYT</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="outer_wiki">
+            <div id="wiki_box" onclick="setTimeout(function(){location.href='https://wiki.desaux.000.pe'},200)">
+                <span id="wiki_title">&Uuml;ber Desaux</span>
+                <span id='wiki_content'><br>Desaux oder DesauxTV auf <span class="twitch_a" onclick="redirect(1)">Twitch</span>, geboren am 15.10.2004 in Frankfurt am Main, ist ein deutscher YouTuber und Streamer, der auf seinem Kanal hauptsächlich Anleitungen zum Computerspiel Minecraft. Im Stream auf YouTube und Twitch spielt er meistens Minecraft, Java Edition. Vor 2023, lud er hauptsächlich englische Weltraumvideos hoch, er hat als Statuszeichen einen Wolf, weil . . . <b>Im Wiki anzeigen</b></span>
+            </div>
+        </div>
+        <div id="outer_vid">
+            <div id="vid_box">
+                <div id="m_p">
+                <span id="vid_title">Guck dir Desaux neuestes Video an!</span>
+                </div>
+                <span id="vid_url"></span>
+            <div class="center" id="centervid">
+                <iframe id="last_vid" title="Das neueste Desaux-Video" allowfullscreen>Uuups! Dein Browser unterstützt keine Einbettungen. Versuche ihn zu aktualisieren.</iframe>
+            </div>
+            </div>
+        </div>
+        <div id="stv_outer">
+            <div id="stv_box">
+                <div style="width:100%;float:left;">
+                    <img draggable="false" src="stv_icon.png" id="img_stv" alt="icon">
+                    <span id="title_stv">7TV Extension</span>
+                </div>
+                <div style="width:100%;float:left;">
+                    <span id='comp_stv'>Kompatibel mit</span><div class="twitch_link_widget" onclick="redirect(1)" style="margin-right:-20px">Twitch</div><div class="yt_link_widget" onclick="redirect(2)" id="m_hide">YouTube</div>
+                    
+                </div>
+                <div style="margin-left:35px;">
+                <span id="stv_e">
+                    Mit der 7TV Erweiterung werden auf YouTube und Twitch neue, von der Community erstellte Emotes hinzugef&uuml;gt. Du kannst auch &uuml;ber die Webseite von 7TV deine eigenen Emotes erstellen und bei Desaux einreichen. Lade dir jetzt 7TV f&uuml;r Android oder deinen Browser herunter.
+                </span>
+                <div class="center">
+                    <img draggable="false" src="https://cdn.7tv.app/emote/66ba5d2c3655777b273654ba/4x.webp" class="stv_bs" alt="icon">
+                    <img draggable="false" src="https://cdn.7tv.app/emote/66ba4ab2981479cde1c2a891/4x.webp" class="stv_bs" alt="icon">
+                    <img draggable="false" src="https://cdn.7tv.app/emote/66b9b6e9176d823265a40ab8/4x.webp" class="stv_bs" alt="icon">
+                    <img draggable="false" src="https://cdn.7tv.app/emote/66bf9bcac0a41ddc495abfb5/4x.webp" class="stv_bs" alt="icon">
+                    <img draggable="false" src="https://cdn.7tv.app/emote/66ba52c9232c023ab5ff9470/4x.webp" class="stv_bs" onload="if(isMobile()){this.style.display = 'none'}" alt="icon">
+                    <img draggable="false" src="https://cdn.7tv.app/emote/66c25b8581599e88b8ba4155/4x.webp" class="stv_bs" onload="if(isMobile()){this.style.display = 'none'}" alt="icon">
+                    <img draggable="false" src="https://cdn.7tv.app/emote/66c264ee0d9730b8cab6750b/4x.webp" class="stv_bs" onload="if(isMobile()){this.style.display = 'none'}" alt="icon">
+                    <img draggable="false" src="https://cdn.7tv.app/emote/66c5d78bfefca9b2cbfa1ff4/4x.webp" class="stv_bs" onload="if(isMobile()){this.style.display = 'none'}" alt="icon">
+                    </div>
+                    <div class="center"><span id="stv_credits">IloveSchnitzel09, einfachniemmand</span></div>
+                </div>
+                <div class="center">
+                <div id="stv_download">
+                    <span id="stv_download_text" onclick="popup('7tv.app')">Download</span>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="outer_imp" style="transition:300ms;" onclick="window.open('https://discord.gg/zHh3QzRYMM','Du wirst zum Discord-Server hinzugef&uuml;gt','height=500,width=700')">
+            <i class="fa-solid fa-question" style="height:18px;margin-top:5px;"></i>&ensp;Hilfe und Mehr Informationen
+        </div>
+        <i class="fa-solid fa-arrow-up" id="arrow_up" onclick="location.href = '#'"></i>
+        <div id="end" style="opacity:0;width:100%;height:0;"></div>
+        <div id="cookie_allowance_outer">
+            <div id="padding_50_outer">
+                <span>Damit uns Google weiterhin mag, m&uuml;ssen wir Cookies auf deinem Gerät speichern.</span>
+                <div>
+                    <div class="cookie_button" onclick="cookie_ok()">Ist OK.</div>
+                    <div class="cookie_button" onclick="localStorage.clear();location.href = 'nocookie/'">Nee, lieber nicht.</div>
+                    <div class="cookie_button" onclick="cookieinfo()">Was?</div>
+                </div>
+            </div>
+        </div>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+            body {
+                font-family: Poppins, Arial, Dosis, sans-serif;
+                user-select: none;
+                color: rgb(255,255,255);
+            }
+            #easter_egg_counter {
+                position:fixed;
+                left:0;
+                top:0px;
+                height:30px;
+                font-size:15px;
+                width:100px;
+                background:rgb(24, 36, 51);
+                z-index:4;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                border-bottom-right-radius:10px;
+                border-bottom-left-radius:10px;
+                transition:500ms;
+            }
+            #arrow_up {
+                position:fixed;
+                right:25px;
+                transition:300ms !important;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                height:50px;
+                width:50px;
+                border-radius:20px;
+                background:rgb(12, 19, 29);
+                cursor:pointer;
+            }
+            #arrow_up:hover {
+                box-shadow: rgba(0,0,0,0.5) 3px 3px 5px;
+            }
+            #padding_50_outer {
+                margin:50px;
+            }
+            .cookie_button {
+                float:left;
+                margin-right:30px;
+                font-size:20px;
+                background:rgb(67, 102, 141);
+                height:45px;
+                padding-left:15px;
+                padding-right:15px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                border-radius:5px;
+                margin-top:10px;
+                margin-bottom:40px;
+                cursor:pointer;
+                transition:300ms;
+                border: 2.5px rgb(67, 102, 141) solid;
+            }
+            .cookie_button:hover {
+                border:2.5px rgb(255,50,50) solid;
+                background:rgba(67, 102, 141,0.1);
+            }
+            .cookie_button:first-child:hover {
+                border:2.5px rgb(20,200,20) solid;
+            }
+            .cookie_button:last-child:hover {
+                border:2.5px rgb(67, 102, 141) solid;
+            }
+            .cookie_button:first-child {
+                margin-left:20px;
+            }
+            #cookie_allowance_outer {
+                background: rgba(250,250,255,0.4);
+                position:fixed;
+                bottom:0;
+                left:0;
+                min-height:100px;
+                max-height:60%;
+                width:100%;
+                color:black;
+                font-size:30px;
+                backdrop-filter:blur(10px);
+                border-top-right-radius:10px;
+                border-top-left-radius:10px;
+                transition:1000ms;
+            }
+            #outer_imp {
+                background-color:rgb(12, 19, 29);
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                width:100%;
+                font-size:15px;
+                height:30px;
+                cursor:pointer;
+                position:fixed;
+                bottom:-30px;
+                z-index:19;
+            }
+            #stv_download {
+                margin-top:20px;
+                background:rgb(60, 90, 127);
+                border-radius:15px;
+                height:50px;
+                width:200px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                transition:300ms;
+                cursor:pointer;
+            }
+            #mod_outer {
+                margin-top:40px;
+                min-width:80px;
+                height:80px;
+                margin-right:15px;
+                position:absolute;
+                right:50px;
+                top:400px;
+            }
+            .mod_shortcut {
+                width:30px;
+                background-image:url(https://pbs.twimg.com/profile_images/778706890914095109/fhMDH9o6_400x400.jpg);
+                height:30px;
+                background-size:30px;
+                background-repeat:no-repeat;
+                background-position:center left;
+                float:right;
+                margin:5px;
+                filter:brightness(1000%);
+                transition:300ms;
+                cursor:pointer;
+            }
+            .mod_shortcut:hover {
+                filter:brightness(100%);
+                margin:0;
+                width:40px;
+                height:40px;
+                background-size:40px;
+            }
+            #rinth_shortcut {
+                background-size:25px;
+            }
+            #rinth_shortcut:hover {
+                background-size:35px;
+            }
+            #stv_download:hover{
+                background:rgb(50, 80, 117);
+            }
+            #stv_download_text {
+                font-size:20px;
+            }
+            #stv_credits {
+                font-size:10px;
+                color:rgb(100,100,100);
+                font-weight:300px;
+            }
+            .stv_bs {
+                height:50px;
+                margin-left:15px;
+                margin-right:15px;
+            }
+            #stv_e {
+                font-size:18px;
+                font-weight:500;
+            }
+            #comp_stv{
+                float:left;
+                font-size: 15px;
+                height: 25px;
+                padding-left: 30px;
+                margin: 5px;
+                display: flex;
+                align-items:end;
+                transition: 400ms;
+                margin-right: 10px;
+            }
+            #title_stv {
+                font-size:35px;
+                font-weight:900;
+                float:left;
+                margin-top:40px;
+            }
+            #img_stv {
+                width:50px;
+                margin-top:40px;
+                margin-left:40px;
+                border-radius:10px;
+                transition:300ms;
+                margin-right:40px;
+                float:left;
+                height:50px;
+            }
+            #img_stv:hover {
+                margin-right:20px;
+                margin-top:30px;
+                margin-left:30px;
+                width:70px;
+                height:70px;
+            }
+            #stv_box {
+                margin-right:50px;
+                margin-left:50px;
+                max-width:100%;
+                height:370px;
+                background:rgb(24, 36, 51);
+                border-radius:50px;
+            }
+            #stv_outer {
+                width:100%;
+                height:450px;
+                margin-bottom:15px;
+            }
+            .center {
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                position:static;
+            }
+            #centervid {
+                transition:300ms;
+            }
+            #last_vid {
+                height:250px;
+                width:444px;
+                background:rgb(60, 90, 127);
+                border:none;
+                border-radius:25px;
+                margin-top:40px;
+                transition:200ms;
+            }
+            #outer_vid {
+                width:100%;
+                height:450px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                justify-content:center;
+                margin-bottom:30px;
+            }
+            #vid_box {
+                width:100%;
+                margin:50px;
+                border-radius: 50px;
+                height:350px;
+                background:rgb(24, 36, 51);
+                padding:35px;
+            }
+            #vid_title,#vid_url {
+                width:100%;
+                font-weight:900;
+                font-size:35px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            #vid_url {
+                font-weight:400;
+                font-size:15px;
+            }
+            #sp_create {
+                font-size:25px;
+                transition:300ms;
+            }
+            #create_img {
+                opacity:0;
+                height:0px;
+                transition:300ms;
+                margin-bottom:-7px;
+            }
+            #create{
+                transition:300ms;
+                cursor:pointer;
+            }
+            #create:hover {
+                color:rgb(241, 100, 54);
+            }
+            #create:hover #create_img {
+                opacity:1;
+                height:33px;
+            }
+            #create:hover #sp_create {
+                font-size:0px;
+            }
+            #wiki_content {
+                font-size:20px;
+                font-weight:400;
+                margin-top:19px;
+            }
+            #wiki_title {
+                font-weight:900;
+            }
+            #outer_wiki {
+                width:100%;
+                height:350px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                margin-bottom:15px;
+            }
+            #wiki_box {
+                background: linear-gradient(to top, rgb(24, 36, 51),rgb(60, 90, 127));
+                height:200px;
+                margin:50px;
+                width:100%;
+                color:white;
+                border-radius:50px;
+                padding:50px;
+                font-size:40px;
+                cursor:pointer;
+                transition:300ms;
+            }
+            #wiki_box:hover,#wiki_box:active {
+                margin:30px;
+                width:100%;
+                padding:70px;
+                transition:500ms;
+                z-index:0;
+            }
+            #wiki_box:active {
+                margin:60px;
+                width:100%;
+                padding:40px;
+                filter:brightness(200%);
+                z-index:0;
+            }
+            #link {
+                margin-bottom: 30px;
+            }
+            .link_title {
+                color: rgb(255,255,255);
+                font-size:25px;
+            }
+            .link_link {
+                font-weight:600;
+            }
+            .link_outer_text {
+                height:100%;
+                float:left;
+                padding-top:10px;
+                padding-left:20px;
+                margin-right:30px;
+                font-weight:900;
+            }
+            .outer_link_img {
+                height:100%;
+                width: 125px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                float:left;
+            }
+            .link_img {
+                height:50%;
+            }
+            .link_box,.link_box_s {
+                width: 100%;
+                margin:15px;
+                margin-left:50px;
+                margin-right:50px;
+                height:80px;
+                background: rgb(24, 36, 51);
+                border-radius:20px;
+                transition:400ms;
+                cursor:pointer;
+                color:rgb(100,100,100);
+                font-size:12px;
+            }
+            .link_box_s {
+                margin-left:15px;
+                margin-right:15px;
+            }
+            .link_box_s:first-child {
+                margin-left:50px;
+            }
+            .link_box_s:last-child {
+                margin-right:50px;
+            }
+            .link_box:hover,.link_box_s:hover,.link_box:active,.link_box_s:active {
+                margin:10px;
+                margin-left:45px;
+                margin-right:45px;
+                height:90px;
+                width:100%;
+                background: rgb(74, 86, 101);
+                color:rgb(200,200,200);
+                font-size:16px;
+            }
+            .link_box:active,.link_box_s:active {
+                margin:20px;
+                margin-left:65px;
+                margin-right:65px;
+                height:70px;
+                width:100%;
+                background: rgb(74, 86, 101);
+                color:rgb(200,200,200);
+                font-size:10px;
+            }
+            
+            .link_box_s:last-child:active {
+                margin-right:45px;
+            }
+            .link_box_s:first-child:active {
+                margin-left:45px;
+            }
+            .link_box_s:last-child:hover {
+                margin-right:45px;
+            }
+            .link_box_s:first-child:hover {
+                margin-left:45px;
+            }
+            .link_box_s:hover {
+                margin-left:10px;
+                margin-right:10px;
+            }
+            .outer_link {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+            #end_text_news {
+                background: linear-gradient(to bottom,rgba(0,0,0,0), rgb(24, 36, 51));
+                width:27%;
+                height:150px;
+                position:absolute;
+                top:250px;
+            }
+            #widget_outer_news {
+                position:absolute;
+                top:400px;
+                background:rgb(24, 36, 51);
+                width:27%;
+            }
+            .twitch_link_widget,.yt_link_widget {
+                float: left;
+                width: 90px;
+                font-size: 15px;
+                border-radius: 3px;
+                height: 25px;
+                padding-left: 30px;
+                background-repeat: no-repeat;
+                background-position: bottom left;
+                background-size: 20px;
+                margin: 5px;
+                display: flex;
+                align-items:end;
+                color: rgb(255,255,255);
+                cursor: pointer;
+                transition: 400ms;
+                margin-right: 15px;
+            }
+            .yt_link_widget {
+                background-image:url(https://cdn-icons-png.flaticon.com/512/1384/1384060.png);
+            }
+            .twitch_link_widget:hover {
+                color: rgb(145, 70, 255);
+            }
+            .yt_link_widget:hover {
+                color: rgb(255, 16, 0);
+            }
+            .twitch_link_widget {
+                background-image: url(https://cdn-icons-png.flaticon.com/512/5968/5968819.png);
+            }
+            #news_text {
+                font-weight: 500;
+                font-size: 18px;
+            }
+            .twitch_link {
+                color: rgb(255,255,255);
+                cursor: pointer;
+                transition: 400ms;
+            }
+            .twitch_link:hover {
+                color: rgb(145, 70, 255);
+            }
+            .twitch_15 {
+                height: 15px;
+                padding-left: 5px;
+            }
+            #news_h2 {
+                font-weight: 500;
+                font-size: 15px;
+            }
+            #news_title {
+                font-weight: 800;
+                font-size: 35px;
+            }
+            #news_outer_text {
+                padding-top: 25px;
+                width: 32%;
+                height: 375px;
+                background: rgba(24, 36, 51,1);
+                float: left;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+            }
+            #news_box {
+                width: 100%;
+                margin: 25px;
+                margin-left: 50px;
+                margin-right: 50px;
+                background: rgb(24, 36, 51);
+                height: 400px;
+                border-radius: 50px;
+                background-image: url(https://img.youtube.com/vi/aaVOAjb7d5A/maxresdefault.jpg);
+                background-position:top left;
+                background-repeat: no-repeat;
+            }
+            #news_linear {
+                float: left;
+                height: 400px;
+                width: 53%;
+                margin-left: 15%;
+                background: linear-gradient(to right, rgba(0,0,0,0), rgba(24, 36, 51,1));
+                border-radius: 50px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            #news_outer {
+                height: 450px;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                margin-bottom: 30px
+            }
+            .nav_text,.nav_text_l,.nav_text_l1 {
+                font-size: 20px;
+                font-weight: 900;
+                transition: 400ms;
+                cursor: pointer;
+            }
+            .nav_text:hover,.nav_text_l:hover,.nav_text_l1:hover {
+                font-size: 23px;
+                color: rgb(255, 75, 75);
+            }
+            .nav_outer_text,.nav_outer_text_l,.nav_outer_text_l1 {
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                float:left;
+                width: 100px;
+            }
+            .nav_outer_text_l {
+                width:220px;
+            }
+            .nav_outer_text_l1 {
+                width:200px;
+            }
+            #nav_outer {
+                background: rgb(24, 36, 51);
+                border-bottom: 0.7px solid rgb(67, 102, 141);
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index:5;
+                transition:200ms height;
+            }
+            #nav_padding,#nav_outer {
+                width: 100%;
+                height: 70px;
+            }
+            #nav_img {
+                background-image: url(https://cdn.discordapp.com/icons/901458579482099762/5ae793c98864e5dffb8942ed8d04abd5.webp?size=320);
+                background-size: 60px;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 70px;
+                width: 100px;
+                float: left;
+                transition:1500ms transform, 300ms height, 300ms background-size;
+                transform:rotate(0deg);
+            }
+            #nav_img:hover {
+                background-size:65px;
+            }
+            ::-webkit-scrollbar {
+                width: 6px;
+            }
+            
+            ::-webkit-scrollbar-track {
+            background: transparent;
+            }
+
+            ::-webkit-scrollbar-thumb {
+            background: rgb(34, 46, 61);
+            border-radius:3px;
+            }
+            .link_title {
+                transition:300ms
+            }
+            #Discord:hover {
+                color: rgb(88, 101, 242);
+            }
+            #YouTube:hover {
+                color: rgb(255, 0, 0);
+            }
+            #Twitch:hover {
+                color: rgb(145, 70, 255);
+            }
+            #Whatsapp:hover {
+                color: rgb(69, 200, 85);
+            }
+            #TikTok:hover {
+                color: rgb(255, 0, 79);
+            }
+            #Insta:hover {
+                color: rgb(246, 86, 85);
+            }
+            #X:hover {
+                color: rgb(0,0,0);
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
+        <style id="fillin">
+        </style>
+        <style id="fillin_b">
+        </style>
+        <button style="display:none" accesskey="c" onclick='changecursor()'>Cursor ändern</button>
+    </body>
+    <script>
+        
+            if(localStorage.getItem('test_user_desaux') == null){}else{
+                document.getElementById('body').innerHTML = "<span id='offline_error'>Aktuell wird an dieser Webseite noch gearbeitet. Falls du die Beta ausprobieren willst, melde dich bei Desaux oder bei einfachniemmand</span>"
+                document.getElementById('user_script').innerHTML = ''
+                localStorage.clear();
+            }
+            
+            if(localStorage.getItem('desauxcookie_ok') == '1'){
+                cookie_allowance = true;
+                document.getElementById('cookie_allowance_outer').style.display = 'none';
+            }
+    </script>
+    <style>
+        #offline_error {
+            color:white;
+            font-family:"Product Sans", "Poppins", "Dosis", Arial, Calibri, sans-serif;
+            position:fixed;
+            top:0;
+            left:0;
+            height:100%;
+            width:100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            user-select:none;
+            font-size:25px;
+        }
+    </style>
+</html>
