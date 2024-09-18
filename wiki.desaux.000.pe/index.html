@@ -14,16 +14,15 @@
     </head>
     <body>
         <div id="outer_top">
-            <img src='desauxwiki.png' id="desauxwiki" draggable="false">
-            <div style="height:40px;width:0%;float:right;" id="outer_top_content">
+            <div style="height:70px;width:0%;float:right;" id="outer_top_content">
             <div style="height:40px;width:0%;float:right;" id="top_top_content">
             </div>
-            <div style="height:40px;width:0%;float:right;" id="top_content">
+            <div style="height:50px;width:0%;float:right;" id="top_content">
                 <div class='art_outer'>
-                    <a href="/" class='art_text'>Artikel</a>
+                    <a href="/" style="text-decoration:none;" class='art_text'>Artikel</a>
                 </div>
                 <div class='art_outer_last'>
-                    <a href="javascript:" onclick="localStorage.setItem('openInt',3);location.href='https://discord.desaux.000.pe/'" class='art_text'>Diskussion</a>
+                    <a style="color:rgb(81, 69, 173);padding-top:6px;" href="javascript:" onclick="localStorage.setItem('openInt',3);window.open('https://discord.desaux.000.pe/','Sending a request to the server...','height=300,width=500')" class='art_text'>Diskussion</a>
                 </div>
                 <div id="top_border"></div>
             </div>
@@ -61,6 +60,7 @@
         <p style="margin:0;margin-bottom:0.25em;"><a href="javascript:location.reload()">Zuf&auml;lliger Artikel</a></p>
         <p style="margin:0;margin-bottom:0.25em;"><a href="https://desaux.000.pe/">Zurück zur Übersicht</a></p>
     </div>
+            <img src='desauxwiki.png' id="desauxwiki" draggable="false">
 <div id="content">
 <div id="outer_title"><span class="h1">Desaux <span style="color:white;font-size:0;"> - DesauxWiki</span></span></div>
 <p class="underh1">Content Creator, Gesch&auml;ftsführer und Deutscher Multimediapreistr&auml;ger<a href="https://www.gnz.de/lokales/main-kinzig-kreis/gelnhausen/gelnhausen-ehemalige-grimmelsschueler-mit-deutschem-multimediapreis-mb21-ausgezeichnet-im-gespraech-CUKEJBSKJBAC7BTFEA5F73JYIQ.html"><sup>[1]</sup></a>, wohnhaft in Heidelberg.</p>
@@ -201,6 +201,7 @@ Tim hat seinen YouTube Kanal am 12. März 2019 erstellt und macht laut Schätzun
         align-items:center;
         display:none;
         user-select:none;
+        z-index:4;
     }
     #info_text {
         height:330px;
@@ -211,6 +212,7 @@ Tim hat seinen YouTube Kanal am 12. März 2019 erstellt und macht laut Schätzun
     body {
         margin:0;
         padding:0;
+        background: rgb(246, 246, 246);
     }
     .info {
         height:15px;
@@ -231,7 +233,7 @@ Tim hat seinen YouTube Kanal am 12. März 2019 erstellt und macht laut Schätzun
         text-decoration:underline;
     }
     .art_outer, .art_outer_last {
-        height:40px;
+        height:24.5px;
         margin-left:6.5px;
         padding:5px;
         background:linear-gradient(to top, rgba(255,255,255,1) 50%, rgba(255,255,255,0));
@@ -243,11 +245,12 @@ Tim hat seinen YouTube Kanal am 12. März 2019 erstellt und macht laut Schätzun
         align-items:center;
         border-top:none;
         float:left;
+        padding-top:10px;
     }
     .art_text {
         font-size:0.82em;
         color:black;
-        padding-top:1px;
+        padding-top:5px;
     }
     .art_outer_last {
         background:linear-gradient(to top, rgba(232, 242, 248,1) 50%, rgba(232, 242, 248,0));
@@ -256,7 +259,12 @@ Tim hat seinen YouTube Kanal am 12. März 2019 erstellt und macht laut Schätzun
         margin-left:0;
         border-left:0;
     }
-    .art_text:hover {
+    .art_outer {
+        height:25px;
+        border-bottom:none;
+    }
+    
+    .art_text {
         text-decoration:none;
     }
     #top_border {
@@ -269,19 +277,31 @@ Tim hat seinen YouTube Kanal am 12. März 2019 erstellt und macht laut Schätzun
         width:100%;
         height:80px;
         background:linear-gradient(to top, rgb(246,246,246),rgb(255,255,255));
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:2;
     }
     #outer_left {
         float:left;
         width:150px;
         background: rgb(246, 246, 246);
         padding-left:30px;
-        padding-top:90px;
+        padding-top:170px;
         font-size:0.85em;
+        position:absolute;
+        left:0;
+        top:0;
+        z-index:1;
     }
     #desauxwiki {
         width:160px;
         margin-left:10px;
         margin-top:10px;
+        position:absolute;
+        top:0px;
+        left: 0px;
+        z-index:3;
     }
     #content {
         float:left;
@@ -292,6 +312,8 @@ Tim hat seinen YouTube Kanal am 12. März 2019 erstellt und macht laut Schätzun
         border:rgb(167, 215, 249) solid 0.5px;
         border-top:none;
         border-right:none;
+        margin-left:180px;
+        margin-top:80px;
     }
     p {
         line-height:1.6;
