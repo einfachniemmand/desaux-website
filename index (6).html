@@ -1,0 +1,56 @@
+<html oncontextmenu="return false">
+    <head>
+        <title>
+            Error 403 - Redirecting in 5s
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="https://cdn.discordapp.com/icons/901458579482099762/5ae793c98864e5dffb8942ed8d04abd5.webp?size=160">
+    </head>
+    <body>
+        <iframe src="/">
+            Ooops. That now makes 2 Errors!
+        </iframe>
+        <div></div>
+        <style>
+            div {
+                border:0;
+                margin:0;
+                height:100%;
+                width:100%;
+                position:fixed;
+                top:0;
+                left:0;
+                backdrop-filter:blur(20px);
+                z-index:4;
+                background:rgba(0,0,0,0.3);
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                background-image:url(https://cdn.discordapp.com/icons/901458579482099762/5ae793c98864e5dffb8942ed8d04abd5.webp?size=1280);
+                background-repeat:no-repeat;
+                background-position:center center;
+                background-size:150px;
+                transition:500ms;
+            }
+            div:hover {
+                background-size:200px;
+            }
+            iframe {
+                border:0;
+                margin:0;
+                height:100%;
+                width:100%;
+                position:fixed;
+                top:0;
+                left:0;
+            }
+        </style>
+        <script>
+            window.onload = function () {
+                setTimeout(function(){
+                    location.href = "/"
+                },5000)
+            }
+        </script>
+    </body>
+</html>
